@@ -6,7 +6,7 @@ export function HeroSection() {
       className="relative py-32 rounded-xl shadow-lg overflow-hidden"
     >
       <video
-        src="/showcase.mp4" // Replace with your video URL
+        src="https://www.crystaldynamics.com/content/uploads/2023/08/CD_Website_Header_Final_720p_1.4mbps-1-1.mp4"
         autoPlay
         loop
         muted
