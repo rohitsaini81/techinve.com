@@ -15,7 +15,7 @@ export function HeroSection() {
           console.error("Video failed to load", e);
         }}
       />
-      <div className="absolute inset-0 bg-background/30 backdrop-blur-md z-1"></div>
+      <div className="absolute inset-0 bg-background/30 z-1"></div>
       <div className="container mx-auto text-center relative z-10">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground">
           Welcome to Tech Inventory
@@ -33,4 +33,5 @@ export function HeroSection() {
     </section>
   );
 }
+
 
