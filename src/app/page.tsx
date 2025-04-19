@@ -49,6 +49,25 @@ export default function Home() {
             </div>
           </section>
 
+            {/* News and Blog Section */}
+            <section
+              id="news"
+              className="w-screen h-screen bg-cover bg-center relative"
+              style={{ backgroundImage: "url('https://www.crystaldynamics.com/content/uploads/2023/09/elementDesktopBackground-gray-reupload.png')" }}
+            >
+              {/* Overlay for text readability (optional) */}
+              <div className="absolute inset-0 bg-black/50 z-0"></div>
+              <div className="w-full relative z-10">
+                <h2 className="text-3xl font-semibold mt-8 mb-6 text-center text-white">
+                  News and Blog
+                </h2>
+                {/* Add your news and blog content here */}
+                <p className="text-lg text-gray-200 text-center">
+                  Stay up-to-date with the latest news and insights from Tech Inventory.
+                </p>
+              </div>
+            </section>
+
           {/* Updated Contact Section */}
           <section 
   id="contact" 
@@ -151,4 +170,3 @@ export default function Home() {
     </div>
   );
 }
-
