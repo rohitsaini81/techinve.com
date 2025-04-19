@@ -34,7 +34,7 @@ const prompt = ai.definePrompt({
       summary: z.string().describe('The summarized employee bio.'),
     }),
   },
-  prompt: `Summarize the following employee bio in a concise manner:\n\n{{{bio}}}`, // Keep the prompt simple for summarization
+  prompt: `Summarize the following employee bio in a concise and impactful manner. Focus on their key skills, experiences, and contributions. Aim for a summary that is no more than two sentences.\n\n{{{bio}}}`,
 });
 
 const summarizeEmployeeBioFlow = ai.defineFlow(
