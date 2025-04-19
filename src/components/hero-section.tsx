@@ -11,6 +11,9 @@ export function HeroSection() {
         loop
         muted
         className="absolute inset-0 object-cover w-full h-full"
+        onError={(e) => {
+          console.error("Video failed to load", e);
+        }}
       />
       <div className="absolute inset-0 bg-background/70 backdrop-blur-md z-1"></div>
       <div className="container mx-auto text-center relative z-10">
@@ -30,3 +33,4 @@ export function HeroSection() {
     </section>
   );
 }
+
