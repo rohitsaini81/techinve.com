@@ -4,14 +4,15 @@ export function HeroSection() {
   return (
     <section
       className="relative py-32 rounded-xl shadow-lg overflow-hidden"
-      style={{
-        backgroundImage:
-          'url(https://images.unsplash.com/photo-1605236420544-31ff570a4409?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
     >
-      <div className="absolute inset-0 bg-background/70 backdrop-blur-md"></div>
+      <video
+        src="/showcase.mp4" // Replace with your video URL
+        autoPlay
+        loop
+        muted
+        className="absolute inset-0 object-cover w-full h-full"
+      />
+      <div className="absolute inset-0 bg-background/70 backdrop-blur-md z-1"></div>
       <div className="container mx-auto text-center relative z-10">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground">
           Welcome to Tech Inventory
