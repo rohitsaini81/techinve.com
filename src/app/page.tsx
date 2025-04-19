@@ -1,3 +1,4 @@
+'use client';
 
 import {ContactForm} from '@/components/contact-form';
 import {EmployeeSpotlight} from '@/components/employee-spotlight';
@@ -5,6 +6,7 @@ import {HeroSection} from '@/components/hero-section';
 import {ProjectShowcase} from '@/components/project-showcase';
 import Link from 'next/link';
 import { Icons } from '@/components/icons';
+import { Facebook, Instagram, Linkedin, Youtube, Twitter, Disc } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -73,22 +75,22 @@ export default function Home() {
       <div className="bg-black bg-opacity-70 text-white rounded-xl p-6 shadow-lg w-11/12 max-w-xl">
         <div className="flex flex-wrap gap-4 justify-center text-lg font-medium">
           <Link href="#" className="flex items-center hover:text-blue-400 transition-colors">
-            {Icons.circle && <Icons.circle className="mr-2 h-5 w-5" />} Facebook
+            <Facebook className="mr-2 h-5 w-5" /> Facebook
           </Link>
           <Link href="#" className="flex items-center hover:text-pink-400 transition-colors">
-            {Icons.circle && <Icons.circle className="mr-2 h-5 w-5" />} Instagram
+            <Instagram className="mr-2 h-5 w-5" /> Instagram
           </Link>
           <Link href="#" className="flex items-center hover:text-blue-600 transition-colors">
-            {Icons.circle && <Icons.circle className="mr-2 h-5 w-5" />} LinkedIn
+            <Linkedin className="mr-2 h-5 w-5" /> LinkedIn
           </Link>
           <Link href="#" className="flex items-center hover:text-sky-400 transition-colors">
-            {Icons.circle && <Icons.circle className="mr-2 h-5 w-5" />} X-Tweeter
+            <Twitter className="mr-2 h-5 w-5" /> X-Tweeter
           </Link>
           <Link href="#" className="flex items-center hover:text-red-400 transition-colors">
-            {Icons.circle && <Icons.circle className="mr-2 h-5 w-5" />} YouTube
+            <Youtube className="mr-2 h-5 w-5" /> YouTube
           </Link>
           <Link href="#" className="flex items-center hover:text-gray-400 transition-colors">
-            {Icons.circle && <Icons.circle className="mr-2 h-5 w-5" />} Discord
+            <Disc className="mr-2 h-5 w-5" /> Discord
           </Link>
         </div>
       </div>
@@ -149,3 +151,4 @@ export default function Home() {
     </div>
   );
 }
+
