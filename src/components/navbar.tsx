@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export function Navbar() {
   return (
-    <nav className="bg-secondary text-secondary-foreground py-4">
+    <nav className="fixed top-0 left-0 w-full z-20 bg-transparent text-secondary-foreground py-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">
           Tech Inventory
@@ -19,3 +19,4 @@ export function Navbar() {
     </nav>
   );
 }
+

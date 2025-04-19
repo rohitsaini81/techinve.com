@@ -3,7 +3,11 @@
 export function HeroSection() {
   return (
     <section
-      className="relative py-32 rounded-xl shadow-lg overflow-hidden"
+      className="relative py-32  overflow-hidden"
+      style={{
+        margin: '0',
+        width: '100vw',
+      }}
     >
       <video
         src="https://www.crystaldynamics.com/content/uploads/2023/08/CD_Website_Header_Final_720p_1.4mbps-1-1.mp4"
@@ -15,7 +19,7 @@ export function HeroSection() {
           console.error("Video failed to load", e);
         }}
       />
-      <div className="absolute inset-0 bg-background/30 z-1"></div>
+      <div className="absolute inset-0 bg-background/0 z-1"></div>
       <div className="container mx-auto text-center relative z-10">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground">
           Welcome to Tech Inventory
@@ -33,5 +37,4 @@ export function HeroSection() {
     </section>
   );
 }
-
 
