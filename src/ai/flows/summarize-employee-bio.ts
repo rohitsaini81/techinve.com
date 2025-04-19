@@ -13,14 +13,12 @@ import {z} from 'genkit';
 const SummarizeEmployeeBioInputSchema = z.object({
   bio: z.string().describe('The employee bio to summarize.'),
 });
-export type SummarizeEmployeeBioInput = z.infer<typeof SummarizeEmployeeBioInputSchema>;
 
 const SummarizeEmployeeBioOutputSchema = z.object({
   summary: z.string().describe('The summarized employee bio.'),
 });
-export type SummarizeEmployeeBioOutput = z.infer<typeof SummarizeEmployeeBioOutputSchema>;
 
-export async function summarizeEmployeeBio(input: SummarizeEmployeeBioInput): Promise<SummarizeEmployeeBioOutput> {
+export async function summarizeEmployeeBio(input) {
   return summarizeEmployeeBioFlow(input);
 }
 
@@ -39,10 +37,7 @@ const prompt = ai.definePrompt({
   prompt: `Summarize the following employee bio in a concise manner:\n\n{{{bio}}}`, // Keep the prompt simple for summarization
 });
 
-const summarizeEmployeeBioFlow = ai.defineFlow<
-  typeof SummarizeEmployeeBioInputSchema,
-  typeof SummarizeEmployeeBioOutputSchema
->(
+const summarizeEmployeeBioFlow = ai.defineFlow(
   {
     name: 'summarizeEmployeeBioFlow',
     inputSchema: SummarizeEmployeeBioInputSchema,

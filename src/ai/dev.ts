@@ -1,2 +1,2 @@
-import '@/ai/flows/summarize-employee-bio.ts';
-import '@/ai/flows/summarize-project-description.ts';
+import '@/ai/flows/summarize-employee-bio.js';
+import '@/ai/flows/summarize-project-description.js';

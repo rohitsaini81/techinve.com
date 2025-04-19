@@ -14,16 +14,12 @@ import {z} from 'genkit';
 const SummarizeProjectDescriptionInputSchema = z.object({
   projectDescription: z.string().describe('The full description of the project.'),
 });
-export type SummarizeProjectDescriptionInput = z.infer<typeof SummarizeProjectDescriptionInputSchema>;
 
 const SummarizeProjectDescriptionOutputSchema = z.object({
   summary: z.string().describe('A short, concise summary of the project description.'),
 });
-export type SummarizeProjectDescriptionOutput = z.infer<typeof SummarizeProjectDescriptionOutputSchema>;
 
-export async function summarizeProjectDescription(
-  input: SummarizeProjectDescriptionInput
-): Promise<SummarizeProjectDescriptionOutput> {
+export async function summarizeProjectDescription(input) {
   return summarizeProjectDescriptionFlow(input);
 }
 
@@ -42,10 +38,7 @@ const prompt = ai.definePrompt({
   prompt: `Summarize the following project description in a concise and engaging manner, highlighting the project's purpose and key features.\n\nProject Description: {{{projectDescription}}}`,
 });
 
-const summarizeProjectDescriptionFlow = ai.defineFlow<
-  typeof SummarizeProjectDescriptionInputSchema,
-  typeof SummarizeProjectDescriptionOutputSchema
->({
+const summarizeProjectDescriptionFlow = ai.defineFlow({
   name: 'summarizeProjectDescriptionFlow',
   inputSchema: SummarizeProjectDescriptionInputSchema,
   outputSchema: SummarizeProjectDescriptionOutputSchema,
