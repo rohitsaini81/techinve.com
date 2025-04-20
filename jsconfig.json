@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/services/company-info.js", "src/lib/utils.js", "src/hooks/use-toast.js", "src/hooks/use-mobile.jsx", "src/components/project-showcase.jsx", "src/components/navbar.jsx", "src/components/icons.js", "src/components/hero-section.jsx", "src/components/employee-spotlight.jsx", "src/components/contact-form.jsx", "src/app/page.jsx", "src/app/layout.jsx", "tailwind.config.js", "next.config.js", "src/ai/flows/summarize-project-description.js", "src/ai/flows/summarize-employee-bio.js", "src/ai/dev.js", "src/ai/ai-instance.js"],
+  "exclude": ["node_modules"]
+}

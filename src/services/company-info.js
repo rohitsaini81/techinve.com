@@ -11,7 +11,7 @@ export async function getCompanyInfo() {
   // TODO: Implement this by calling an API.
 
   return {
-    address: '123 Main St, Anytown, USA',
+    address: '123 Main St, Any town, USA',
     phoneNumber: '555-123-4567',
     email: 'info@techinventory.com',
   };

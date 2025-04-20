@@ -1,14 +1,13 @@
 'use server';
+
 /**
  * @fileOverview Summarizes employee bios to provide a quick understanding of their expertise.
  *
  * - summarizeEmployeeBio - A function that summarizes the employee bio.
- * - SummarizeEmployeeBioInput - The input type for the summarizeEmployeeBio function.
- * - SummarizeEmployeeBioOutput - The return type for the summarizeEmployeeBio function.
  */
 
-import {ai} from '@/ai/ai-instance';
-import {z} from 'genkit';
+import { ai } from '@/ai/ai-instance';
+import { z } from 'genkit';
 
 const SummarizeEmployeeBioInputSchema = z.object({
   bio: z.string().describe('The employee bio to summarize.'),
@@ -43,8 +42,8 @@ const summarizeEmployeeBioFlow = ai.defineFlow(
     inputSchema: SummarizeEmployeeBioInputSchema,
     outputSchema: SummarizeEmployeeBioOutputSchema,
   },
-  async input => {
-    const {output} = await prompt(input);
-    return output!;
+  async (input) => {
+    const { output } = await prompt(input);
+    return output;
   }
 );
