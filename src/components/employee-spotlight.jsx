@@ -7,27 +7,27 @@ import {summarizeEmployeeBio} from '@/ai/flows/summarize-employee-bio';
 export function EmployeeSpotlight() {
   const [employees, setEmployees] = useState([
     {
-      name: 'John Doe',
+      name: 'Rohit Saini',
       title: 'CEO',
-      bio: 'John is the CEO of Tech Inventory. He has over 20 years of experience in the tech industry.',
+      bio: 'Rohit Saini is the CEO of Tech Inventory. He has over 20 years of experience in the tech industry.',
       imageUrl: 'https://picsum.photos/200/300',
-      email: 'john.doe@techinventory.com',
+      email: 'rohit1322saini@gmail.com',
       phone: '555-123-4567',
       summary: '', // Placeholder for the summary
     },
     {
-      name: 'Jane Smith',
+      name: 'Rohit Saini',
       title: 'Lead Developer',
-      bio: 'Jane is the Lead Developer at Tech Inventory. She has been with the company for 10 years.',
+      bio: 'Rohit is the Lead Developer at Tech Inventory. He has been with the company for 10 years.',
       imageUrl: 'https://picsum.photos/200/300',
       email: 'jane.smith@techinventory.com',
       phone: '555-987-6543',
       summary: '', // Placeholder for the summary
     },
     {
-      name: 'Alice Johnson',
+      name: 'Rohit Saini',
       title: 'Designer',
-      bio: 'Alice is a Designer at Tech Inventory. She has been with the company for 5 years.',
+      bio: 'Rohit is a Designer at Tech Inventory. She has been with the company for 5 years.',
       imageUrl: 'https://picsum.photos/200/300',
       email: 'alice.johnson@techinventory.com',
       phone: '555-246-8012',
