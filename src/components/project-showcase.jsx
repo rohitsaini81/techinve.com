@@ -1,6 +1,7 @@
 'use client';
 
 export function ProjectShowcase() {
+  const pubUrl= "https://pub-99e7d5ea040a44eeba75ec64a368f73b.r2.dev/"
   const projects = [
     {
       title: 'Awesome Game',
@@ -12,13 +13,13 @@ export function ProjectShowcase() {
       title: 'Cool Software',
       description:
         'An innovative software solution designed to streamline workflows and enhance productivity.',
-      imageUrl: 'https://picsum.photos/400/300',
+      imageUrl: `${pubUrl}webscrappin.png`,
     },
     {
       title: 'Amazing Website',
       description:
         'A beautifully designed website that offers a seamless user experience and engaging content.',
-      imageUrl: 'https://picsum.photos/400/300',
+      imageUrl: `${pubUrl}swipematch.png`,
     },
     {
       title: 'Cutting Edge App',
