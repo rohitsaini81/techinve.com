@@ -5,31 +5,32 @@ import {User, Mail, Phone} from 'lucide-react';
 import {summarizeEmployeeBio} from '@/ai/flows/summarize-employee-bio';
 
 export function EmployeeSpotlight() {
+  const pubUrl= "https://pub-99e7d5ea040a44eeba75ec64a368f73b.r2.dev/"
   const [employees, setEmployees] = useState([
     {
       name: 'Rohit Saini',
       title: 'CEO',
       bio: 'Rohit Saini is the CEO of Tech Inventory. He has over 20 years of experience in the tech industry.',
-      imageUrl: 'https://picsum.photos/200/300',
+      imageUrl: `${pubUrl}scientist.tech-20250313-0001.jpg`,
       email: 'rohit1322saini@gmail.com',
-      phone: '555-123-4567',
+      phone: '+91-8199889776',
       summary: '', // Placeholder for the summary
     },
     {
-      name: 'Rohit Saini',
+      name: 'Abhishek and Vinay',
       title: 'Lead Developer',
-      bio: 'Rohit is the Lead Developer at Tech Inventory. He has been with the company for 10 years.',
-      imageUrl: 'https://picsum.photos/200/300',
-      email: 'jane.smith@techinventory.com',
+      bio: 'Abhishek and Vinay are the Lead Developer at Tech Inventory. they has been with the company for 10 years.',
+      imageUrl: `${pubUrl}abhishek0001.jpg`,
+      email: 'rohit1322saini@gmail.com',
       phone: '555-987-6543',
       summary: '', // Placeholder for the summary
     },
     {
-      name: 'Rohit Saini',
+      name: 'Nikhil Dhiman',
       title: 'Designer',
-      bio: 'Rohit is a Designer at Tech Inventory. She has been with the company for 5 years.',
-      imageUrl: 'https://picsum.photos/200/300',
-      email: 'alice.johnson@techinventory.com',
+      bio: 'Nikhil is a Designer and Video Editor at Tech Inventory. He has been with the company for 5 years.',
+      imageUrl: `${pubUrl}nikhil0001.jpg`,
+      email: 'rohit1322saini@gmail.com',
       phone: '555-246-8012',
       summary: '', // Placeholder for the summary
     },
